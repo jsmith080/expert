@@ -1,8 +1,7 @@
-write-output $licenseInfo<br>
-<br>
-<br>
-if(($licenseInfo | Select-String "LICENSE STATUS").length -gt 5){<br>
+write-output $licenseInfo
+
+if(($licenseInfo | Select-String "LICENSE STATUS").length -gt 5){
     Write-output "True"<br>
-}else{<br>
+}else{
     Write-Output "False"<br>
-}<br>
+}
